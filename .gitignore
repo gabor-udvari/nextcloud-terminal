@@ -1,0 +1,5 @@
+composer.lock
+vendor
+css/vendor
+img/vendor
+js/vendor

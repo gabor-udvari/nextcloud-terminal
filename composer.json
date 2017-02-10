@@ -1,0 +1,26 @@
+{
+	"name"        : "gabor-udvari/terminal",
+	"description" : "An xterm compatible terminal application for Nextcloud",
+	"authors"     : [
+	{
+		"name"    : "Gábor Udvari",
+		"email"   : "gabor.udvari@gmail.com",
+		"homepage": "http://www.gaborudvari.com/"
+	}
+	],
+	"type"        : "project",
+	"require-dev": {
+		"consolidation/robo": "~1.0.5",
+		"fxp/composer-asset-plugin": "~1.2",
+		"bower-asset/xterm.js": "~2.2"
+	},
+	"scripts" : {
+		"pre-install-cmd": [
+			"ComposerHelper::skipAssets"
+		],
+		"post-install-cmd": [
+			"composer.phar update",
+			"vendor/bin/robo install"
+		]
+	}
+}

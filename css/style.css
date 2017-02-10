@@ -1,0 +1,8 @@
+.xterm-rows {
+	/* line-height: 1em !important; */
+	/* font-size: 1.2em;*/
+}
+
+#app-content-wrapper {
+	overflow: hidden;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>terminal</id>
+    <name>Terminal</name>
+    <summary>An xterm compatible terminal application</summary>
+    <description><![CDATA[An xterm compatible terminal application using [xterm.js](http://xtermjs.org/) as a frontend.]]></description>
+    <licence>agpl</licence>
+    <author mail="gabor.udvari@gmail.com" >Gábor Udvari</author>
+    <version>0.0.1</version>
+    <namespace>Terminal</namespace>
+    <category>tools</category>
+    <dependencies>
+        <owncloud min-version="9.2"/>
+        <nextcloud min-version="11" max-version="11"/>
+    </dependencies>
+</info>
