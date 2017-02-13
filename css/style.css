@@ -1,6 +1,20 @@
+@font-face {
+	font-family: DroidSansMonoSlashed;
+	src: url('../fonts/DroidSansMonoSlashed.ttf') format('truetype'),
+		url('../fonts/DroidSansMonoSlashed.woff') format('woff');
+}
+
+#terminal-container {
+	min-height: 400px;
+}
+
+.terminal {
+	font-family: "DroidSansMonoSlashed", monospace;
+}
+
 .xterm-rows {
-	/* line-height: 1em !important; */
-	/* font-size: 1.2em;*/
+	line-height: 1.1em !important;
+	font-size: 1.2em;
 }
 
 #app-content-wrapper {

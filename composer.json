@@ -12,7 +12,17 @@
 	"require-dev": {
 		"consolidation/robo": "~1.0.5",
 		"fxp/composer-asset-plugin": "~1.2",
-		"bower-asset/xterm.js": "~2.2"
+		"bower-asset/xterm.js": "~2.2",
+		"bower-asset/powerline-fonts": "*"
+	},
+	"extra": {
+		"asset-repositories": {
+			"bower-asset/powerline-fonts": 
+			{
+				"type": "bower-vcs",
+				"url": "https://github.com/powerline/fonts"
+			}
+		}
 	},
 	"scripts" : {
 		"pre-install-cmd": [

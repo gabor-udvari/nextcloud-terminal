@@ -35,6 +35,7 @@ class RoboFile extends \Robo\Tasks
 
     $this->styles();
     $this->scripts();
+    $this->fonts();
   }
 
   public function styles() {
@@ -46,5 +47,16 @@ class RoboFile extends \Robo\Tasks
     // Copy xterm.js scripts to js
     $this->_copy('vendor/bower-asset/xterm.js/dist/xterm.js', 'js/vendor/xterm.js/xterm.js', true);
     $this->_copyDir('vendor/bower-asset/xterm.js/dist/addons/fit', 'js/vendor/xterm.js/addons/fit', true);
+  }
+
+  public function fonts() {
+    // Copy Droid Sans Slashed
+    $this->_copy(
+      'vendor/bower-asset/powerline-fonts/DroidSansMonoSlashed/Droid Sans Mono Slashed for Powerline.ttf',
+      'fonts/DroidSansMonoSlashed.ttf'
+    );
+    $this->taskExec('sfnt2woff')
+      ->arg('fonts/DroidSansMonoSlashed.ttf')
+      ->run();
   }
 }
