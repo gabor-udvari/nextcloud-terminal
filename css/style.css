@@ -4,8 +4,15 @@
 		url('../fonts/DroidSansMonoSlashed.woff') format('woff');
 }
 
+#app-content-wrapper {
+	overflow: hidden;
+	position: relative;
+}
+
 #terminal-container {
-	min-height: 400px;
+	height: 100%;
+	width: 100%;
+	position: absolute;
 }
 
 .terminal {
@@ -15,8 +22,4 @@
 .xterm-rows {
 	line-height: 1.1em !important;
 	font-size: 1.2em;
-}
-
-#app-content-wrapper {
-	overflow: hidden;
 }
